@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.neoteric.starter</groupId>
+        <artifactId>neo-starter-parent-neoteric</artifactId>
+        <version>0.1.0.160329172253</version>
+    </parent>
+
+
+    <groupId>com.neoteric.saasmgr</groupId>
+    <artifactId>saas-manager-spring-boot</artifactId>
+    <name>SaaS Manager Spring Boot Example</name>
+    <version>0.1.0</version>
+
+    <scm>
+        <url>https://github.com/neoteric-eu/saas-manager-spring-boot</url>
+        <connection>scm:git:ssh://git@github.com:neoteric-eu/saas-manager-spring-boot.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com:neoteric-eu/saas-manager-spring-boot.git</developerConnection>
+    </scm>
+
+    <properties>
+        <docker.repository.host>docker.neoteric.eu</docker.repository.host>
+        <docker.repository.url>https://docker.neoteric.eu</docker.repository.url>
+        <docker.repository.serverId>docker-repository</docker.repository.serverId>
+        <docker.image.prefix>neoteric/</docker.image.prefix>
+        <mockito.version>1.10.19</mockito.version>
+        <commons.io.version>2.4</commons.io.version>
+        <lombok.version>1.16.8</lombok.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+            <version>${lombok.version}</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.neoteric.starter</groupId>
+            <artifactId>neo-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.neoteric.starter</groupId>
+            <artifactId>neo-starter-saasmgr</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.neoteric.starter</groupId>
+            <artifactId>neo-starter-saasmgr-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.neoteric.starter</groupId>
+            <artifactId>neo-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+
+    <repositories>
+        <repository>
+            <id>neoteric-os</id>
+            <name>Neoteric-OS</name>
+            <url>http://naga.neoteric.eu:8081/nexus/content/repositories/os-releases</url>
+        </repository>
+    </repositories>
+</project>

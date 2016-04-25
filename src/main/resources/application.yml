@@ -1,0 +1,5 @@
+notificationsClient.ribbon.listOfServers: http://dev.sharedservices.ntrc.eu
+saasMgrClient.ribbon.listOfServers: http://dev.sharedservices.ntrc.eu
+saasManager.ribbon.listOfServers: http://dev.sharedservices.ntrc.eu:4100
+apiKey: ZbvsLlzXnfvC3d0LhiLESwVcKOj1gAPp
+apiSecret: wa40Z9Wt9us0aeboTIGdVTlPrQ1NIaCE3t6revGMhflI7veC6mYXghpHga0IsOxH6HjmofvVp3NAnuFW
